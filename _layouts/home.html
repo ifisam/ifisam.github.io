@@ -1,24 +1,30 @@
 ---
 layout: default
 ---
+{% include lang.html %}
 
 <div class="row g-5 mb-5">
   <div class="col-md-6">
-    <h3 class="fw-bold">Research</h3>
+    <h2 class="h3 fw-bold">{{ t.research }}</h2>
     {{ content }}
   </div>
   <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/ifisam.jpg" alt="ifisam" width="100%">
+    <picture>
+      <source srcset="{{ site.github.url }}/assets/img/profile.webp" type="image/webp">
+      <img src="{{ site.github.url }}/assets/img/profile.jpg" alt="{{ t.photo_alt }}" width="640" height="640" class="img-fluid" fetchpriority="high">
+    </picture>
   </div>
 </div>
 
 {% include publications.html %}
 
+{% if site.posts.size > 0 %}
 <div class="row g-5 mb-5">
   <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
+    <h2 class="h3 fw-bold border-bottom pb-3 mb-5">{{ t.updates }}</h2>
     {% for post in site.posts %}
       <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
     {% endfor %}
   </div>
 </div>
+{% endif %}

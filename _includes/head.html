@@ -1,12 +1,16 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  {% if jekyll.environment == "production" %}<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">{% endif %}
+  {% seo %}
+  {% if page.ref %}{% assign translations = site.pages | where: "ref", page.ref %}{% for p in translations %}
+  <link rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | absolute_url }}">{% if p.lang == "en" %}
+  <link rel="alternate" hreflang="x-default" href="{{ p.url | absolute_url }}">{% endif %}{% endfor %}{% endif %}
+  {% if page.layout == "home" %}{% include person-schema.html %}{% endif %}
   <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
-  <script defer src="{{ site.github.url }}/assets/libs/fontawesome/all.min.js"></script>
   <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
   <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/apple-icon-152x152.png">
-  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{ site.github.url }}/assets/favicon.ico">
+  {% if page.layout == "home" %}<link rel="preload" as="image" href="{{ site.github.url }}/assets/img/profile.webp" type="image/webp">{% endif %}
 </head>

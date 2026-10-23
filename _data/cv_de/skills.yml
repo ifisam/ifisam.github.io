@@ -1,0 +1,20 @@
+- title: 'Programmierung'
+  description: 'Python, C++, Rust, C#, SQL, Shell-Skripting'
+
+- title: 'Entwicklung'
+  description: 'PyTorch, Scikit-Learn, Matplotlib, numpy, pandas, openCV, AWS, Linux, Git, ssh, Office 365, Power BI, Prophet, Docker, PostgreSQL'
+
+- title: 'LLM-Systeme'
+  description: 'RAG, LLM-Agenten, KI-Assistenten, Prompt Engineering, Workflow-Automatisierung'
+
+- title: 'Evaluation'
+  description: 'Modellevaluation, Benchmarking, Validierung von Modellausgaben'
+
+- title: 'Verantwortungsvolle KI'
+  description: 'KI-Sicherheit (Safety und Security), Datenschutz, menschliche Aufsicht'
+
+- title: 'MLOps und Infrastruktur'
+  description: 'Linux, Docker, REST-APIs, CI/CD, Model Serving, Vektordatenbanken'
+
+- title: 'Sprachen'
+  description: 'Englisch (fließend), Deutsch (Mittelstufe), Bengalisch (Muttersprache), Hindi (Grundkenntnisse)'

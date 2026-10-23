@@ -1,0 +1,57 @@
+# Interface text for each language. Page content lives in the pages
+# themselves (index.md, de/index.md, ...) and CV entries in _data/cv
+# (English) and _data/cv_de (German).
+
+en:
+  name: English
+  locale: en
+  tagline: "NLP Researcher in AI Safety, Security and Large Language Models"
+  switch_label: "Deutsch"
+  switch_title: "Diese Seite auf Deutsch lesen"
+  menu:
+    - {name: 'publications', url: '/publications'}
+    - {name: 'cv', url: '/cv'}
+    - {name: 'contact', url: '/contact'}
+  research: "Research"
+  publications: "Publications"
+  updates: "Updates"
+  cv: "CV"
+  education: "Education"
+  academic_experience: "Academic Experience"
+  voluntary_experience: "Voluntary Experience"
+  skills: "Skills"
+  contact: "Contact"
+  email: "Email"
+  office: "Office"
+  privacy: "Privacy"
+  photo_alt: "Portrait of Iftakharul Islam, NLP researcher at Universität Trier"
+  contact_role: "MSc Student in NLP"
+  contact_department: "Computational Linguistics"
+  contact_address: "Universitätsring 15, 54296 Trier, Germany"
+
+de:
+  name: Deutsch
+  locale: de
+  tagline: "NLP-Forschung zu KI-Sicherheit und Large Language Models"
+  switch_label: "English"
+  switch_title: "Read this page in English"
+  menu:
+    - {name: 'publikationen', url: '/de/publications'}
+    - {name: 'lebenslauf', url: '/de/cv'}
+    - {name: 'kontakt', url: '/de/contact'}
+  research: "Forschung"
+  publications: "Publikationen"
+  updates: "Neuigkeiten"
+  cv: "Lebenslauf"
+  education: "Ausbildung"
+  academic_experience: "Berufserfahrung"
+  voluntary_experience: "Ehrenamtliches Engagement"
+  skills: "Kenntnisse"
+  contact: "Kontakt"
+  email: "E-Mail"
+  office: "Büro"
+  privacy: "Datenschutz"
+  photo_alt: "Porträt von Iftakharul Islam, NLP-Forschung an der Universität Trier"
+  contact_role: "Masterstudium Natural Language Processing"
+  contact_department: "Computerlinguistik"
+  contact_address: "Universitätsring 15, 54296 Trier, Deutschland"

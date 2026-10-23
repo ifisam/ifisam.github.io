@@ -1,15 +1,23 @@
+{% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", other_lang | first %}
+{% if alt_page %}{% assign alt_url = alt_page.url %}{% elsif other_lang == "de" %}{% assign alt_url = "/de/" %}{% else %}{% assign alt_url = "/" %}{% endif %}
+{% if lang == "de" %}{% assign home_url = "/de/" %}{% else %}{% assign home_url = "/" %}{% endif %}
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <div>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span class="fs-4 fw-bold">{{ site.title }}</span>
+    <a href="{{ site.github.url }}{{ home_url }}" class="d-flex align-items-center text-decoration-none">
+      {% if page.layout == "home" %}
+        <h1 class="fs-4 fw-bold m-0">{{ site.title }}</h1>
+      {% else %}
+        <span class="fs-4 fw-bold">{{ site.title }}</span>
+      {% endif %}
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span>{{ site.description }}</span>
+    <a href="{{ site.github.url }}{{ home_url }}" class="d-flex align-items-center text-decoration-none">
+      <span>{{ t.tagline }}</span>
     </a>
   </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    {% for item in site.data.settings.menu %}
+  <nav class="d-inline-flex align-items-center mt-2 mt-md-0 ms-md-auto">
+    {% for item in t.menu %}
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
+    <a class="lang-switch" href="{{ site.github.url }}{{ alt_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
   </nav>
 </header>

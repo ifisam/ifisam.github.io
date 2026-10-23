@@ -1,55 +1,26 @@
 ---
 layout: default
 ---
-
+{% include lang.html %}
 {{ content }}
 
+{% assign cv_sections = "education,academic-experience,voluntary-experience,skills" | split: "," %}
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">CV</h3>
+    <h1 class="h3 fw-bold border-bottom pb-3 mb-5">{{ t.cv }}</h1>
+    {% for key in cv_sections %}
+    {% assign label_key = key | replace: "-", "_" %}
     <div class="row g-5 mb-5">
       <div class="col-md-2">
-        <h4>Education</h4>
+        <h2 class="h4">{{ t[label_key] }}</h2>
       </div>
       <div class="col-md-10">
-        {% for section in site.data.cv.education %}
+        {% for section in cv[key] %}
           <p class="fw-bold">{{ section.title }}</p>
           <p>{{ section.description }}</p>
         {% endfor %}
       </div>
     </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Academic Experience</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.academic-experience %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Voluntary Experience</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.voluntary-experience %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>Skills</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.skills %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
-        {% endfor %}
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>

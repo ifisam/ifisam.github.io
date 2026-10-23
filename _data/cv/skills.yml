@@ -1,8 +1,20 @@
 - title: 'Programming'
-  description: 'Python, C++, R, LaTeX, C#, SQL'
+  description: 'Python, C++, Rust, C#, SQL, Shell scripting'
 
 - title: 'Development'
-  description: 'PyTorch, Scikit-Learn, Matplotlib, numpy, pandas, openCV, AWS, Linux, Git, ssh, office 365, Power BI, Prophet, Bayesian Statistics, PostgreSQL'
+  description: 'PyTorch, Scikit-Learn, Matplotlib, numpy, pandas, openCV, AWS, Linux, Git, ssh, office 365, Power BI, Prophet, Docker, PostgreSQL'
+
+- title: 'LLM Systems'
+  description: 'RAG, LLM agents, AI assistants, prompt engineering, workflow automation'
+
+- title: 'Evaluation'
+  description: 'Model evaluation, benchmarking, output validation'
+
+- title: 'Responsible AI'
+  description: 'AI safety, AI security, data privacy, human oversight'
+
+- title: 'MLOps and Infrastructure'
+  description: 'Linux, Docker, REST APIs, CI/CD, model serving, vector databases'
 
 - title: 'Languages'
-  description: 'English (Fluent), German (A2), Bengali (Native)'
+  description: 'English (Fluent), German (Intermediate), Bengali (Native), Hindi (Basic)'

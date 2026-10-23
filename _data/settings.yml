@@ -8,9 +8,9 @@ people: []
 courses: []
 
 social:
-- {icon: 'github', link: 'https://github.com/ifisam'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/iftakharul-islam'}
-- {icon: 'envelope', link: 'mailto:s2ifisla@uni-trier.de'}
+- {name: 'GitHub', icon: 'github', link: 'https://github.com/ifisam'}
+- {name: 'LinkedIn', icon: 'linkedin', link: 'https://linkedin.com/in/iftakharul-islam'}
+- {name: 'Email', icon: 'envelope', link: 'mailto:s2ifisla@uni-trier.de'}
 
 contacts:
-- {name: 'Iftakharul Islam', title: 'MSc Student in NLP', department: 'Computational Linguistics', institution: 'Universität Trier', institution_address: 'Universitätsring 15, 54296 Trier, Germany', phone: '+49 157 3463 3988', email: 's2ifisla@uni-trier.de', office: '', image: 'assets/img/profile.jpg'}
+- {name: 'Iftakharul Islam', title: 'MSc Student in NLP', department: 'Computational Linguistics', institution: 'Universität Trier', institution_address: 'Universitätsring 15, 54296 Trier, Germany', email: 's2ifisla@uni-trier.de', office: '', image: 'assets/img/profile.jpg'}

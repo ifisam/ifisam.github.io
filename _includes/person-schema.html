@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Iftakharul Islam",
+  "url": "{{ site.url }}/",
+  "image": "{{ site.image | absolute_url }}",
+  "jobTitle": "NLP Researcher",
+  "description": {{ site.description | jsonify }},
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universität Trier",
+    "url": "https://www.uni-trier.de"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Bangladesh Army University of Science and Technology"
+  },
+  "knowsAbout": [
+    "Natural Language Processing",
+    "Large Language Models",
+    "AI Safety",
+    "AI Security",
+    "Trustworthy AI",
+    "Retrieval-Augmented Generation"
+  ],
+  "sameAs": {{ site.social.links | jsonify }}
+}
+</script>

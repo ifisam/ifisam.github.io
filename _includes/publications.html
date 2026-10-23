@@ -1,11 +1,13 @@
+{% include lang.html %}
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
-    {% if page.title == "Home" %}
+    {% if page.layout == "home" %}
+    <h2 class="h3 fw-bold border-bottom pb-3 mb-5">{{ t.publications }}</h2>
       {% for item in site.data.publications.featured %}
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}
     {% else %}
+    <h1 class="h3 fw-bold border-bottom pb-3 mb-5">{{ t.publications }}</h1>
       {% for item in site.data.publications.index %}
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}

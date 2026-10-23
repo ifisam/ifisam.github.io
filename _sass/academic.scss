@@ -12,3 +12,16 @@ body {
 body a {
   color: $linkColor
 }
+
+.lang-switch {
+  border: 1px solid #ced4da;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.lang-switch:hover,
+.lang-switch:focus-visible {
+  border-color: #212529;
+}

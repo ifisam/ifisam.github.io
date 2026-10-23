@@ -1,4 +1,51 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ifisam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Iftakharul Islam" # the name of your site, e.g. ACME Corp.
-description: "Aspiring Researcher in Natural Language Processing"
+tagline: "NLP Researcher in AI Safety, Security and Large Language Models"
+description: "Iftakharul Islam is an NLP researcher at Universität Trier, Germany, working on Large Language Models with a focus on AI safety, security, and trustworthy AI."
+lang: en
+image: /assets/img/profile.jpg
+
+author:
+  name: Iftakharul Islam
+  url: https://ifisam.github.io
+
+social:
+  name: Iftakharul Islam
+  links:
+    - https://github.com/ifisam
+    - https://linkedin.com/in/iftakharul-islam
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/profile.jpg
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Theme sample content that should not be published or indexed
+exclude:
+  - courses
+  - courses.md
+  - people
+  - people.md
+  - README.md
+  - CHANGELOG.md
+  - LICENSE.txt
+  - screenshot.png
+  - academic.gemspec
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .claude
+  - assets/libs/fontawesome
+  # Unused theme images (about 52 MB)
+  - assets/img/contact.jpg
+  - assets/img/graduate-student.jpg
+  - assets/img/home.jpg
+  - assets/img/ifisam.jpg
+  - assets/img/lab-technician.jpg
+  - assets/img/primary-investigator.jpg

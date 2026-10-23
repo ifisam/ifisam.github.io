@@ -1,12 +1,13 @@
 ---
+lang: en
+ref: home
 layout: home
-title: "Home"
 ---
 
-I am an aspiring researcher in the field of Natural Language Processing (NLP), currently pursuing my Master's degree at Universität Trier, Germany. My academic journey began with a Bachelor's in Computer Science and Engineering from Bangladesh Army University of Science and Technology.
+I am an NLP researcher and Master's student at Universität Trier, Germany, with a Bachelor's in Computer Science and Engineering from the Bangladesh Army University of Science and Technology.
 
-My research interests focus on Human-Computer Interaction, Large Language Models, and their application in creating more intuitive and human-like digital assistants. I am particularly passionate about bridging the gap between complex AI models and practical, user-centric applications.
+I am motivated to build AI that people can trust. My work centres on **Large Language Models** with a focus on **AI safety and security**: how these systems can be evaluated, safeguarded, and deployed responsibly, so that capable models are also reliable, transparent, and secure in real-world use.
 
-Currently, I am working on projects involving Digital Twins and Industrial Metaverse at Robert Bosch GmbH, where I apply my skills in simulation and AI to real-world industrial challenges. Previously, I have gained experience in data analysis and software development through various roles.
+I currently work as a Student Assistant in Computational Linguistics and Digital Humanities (CL/DH) at Universität Trier, and previously supported the Department of Clinical Psychology and Psychotherapy as a Research Assistant in IT. At Robert Bosch GmbH, I worked on Digital Twins and the Industrial Metaverse, bringing simulation and AI to real-world industrial challenges.
 
-I am driven by the goal of contributing to the advancement of NLP and pursuing a PhD in this exciting field. This website serves as a "second brain" to document my learning, share my research updates, and connect with the wider academic community.
+This website is my "second brain", where I document what I learn, share research updates, and connect with the wider AI community.
